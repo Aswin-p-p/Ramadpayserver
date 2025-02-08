@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 
 // Enable CORS with specific configuration
 app.use(cors({
-  origin: 'https://ramadpay.netlify.app/', // Your frontend URL
+  origin: 'https://ramadpay.netlify.app', // Your frontend URL
   methods: 'GET,POST,PUT,DELETE,OPTIONS', // Allow these methods
   allowedHeaders: 'Content-Type,Authorization', // Specify allowed headers
   credentials: true, // Allow credentials (cookies, etc.) if needed
