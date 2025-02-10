@@ -30,7 +30,7 @@ router.post('/submit-form', async (req, res) => {
         Name: ${name || 'Not provided'}
         Email: ${email || 'Not provided'}
         Phone: ${phone || 'Not provided'}
-        Checkbox Selected: ${agreed}`,
+        User agree to receive SMS from Ramad Pay: ${agreed}`,
     };
 
     try {
