@@ -8,8 +8,8 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'info@ramadpay.com',
-        pass: 'Minneapolis2024$' // Use environment variables for security in production
+        user: 'ramadpayagent@gmail.com',
+        pass: 'txdkpkoduqhnstcd' // Use environment variables for security in production
     }
 });
 
@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
 router.post('/submit-form', async (req, res) => {
     const { name, email, phone, agreed } = req.body;
     const isagreed = agreed === 'on' ? 'Yes' : 'No';
-    console.log(agreed);
+
     
 
     const mailOptions = {
