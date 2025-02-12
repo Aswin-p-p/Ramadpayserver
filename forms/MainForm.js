@@ -1,5 +1,6 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const path = require('path');
 const router = express.Router();
 
 
@@ -7,8 +8,8 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        user: 'info@ramadpay.com',
+        pass: 'konmsthsbmrutfws'
     }
 });
 

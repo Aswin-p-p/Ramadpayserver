@@ -8,8 +8,8 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
+        user: 'info@ramadpay.com',
+        pass: 'konmsthsbmrutfws'
   }
 });
 
@@ -31,8 +31,8 @@ router.post('/submit-career-form', upload.single('resume'), async (req, res) => 
   const resumePath = req.file ? req.file.path : null; // File path for attachment
 
   const mailOptions = {
-    from: 'ramadpayagent@gmail.com',
-    to: 'ramadpayagent@gmail.com',
+    from: 'info@ramadpay.com',
+    to: 'info@ramadpay.com',
     subject: 'New Career Form Submission',
     text: `Career Form Submission Details:\n\nName: ${name || 'Not provided'}\nEmail: ${email || 'Not provided'}\nPhone: ${phone || 'Not provided'}`,
     attachments: resumePath
