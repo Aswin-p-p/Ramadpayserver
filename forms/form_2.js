@@ -8,8 +8,8 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'ramadpayagent@gmail.com',
-    pass: 'txdkpkoduqhnstcd'
+        user: 'info@ramadpay.com',
+        pass: 'konmsthsbmrutfws'
   }
 });
 

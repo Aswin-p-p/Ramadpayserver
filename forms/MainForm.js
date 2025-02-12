@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'info@ramadpay.com',
-        pass: 'konmsthsbmrutfws' // Use environment variables for security in production
+        pass: 'konmsthsbmrutfws'
     }
 });
 
@@ -22,8 +22,8 @@ router.post('/submit-form', async (req, res) => {
     
 
     const mailOptions = {
-        from: 'ramadpayagent@gmail.com',
-        to: 'ramadpayagent@gmail.com',
+        from: 'info@ramadpay.com',
+        to: 'info@ramadpay.com',
         subject: 'New Form Submission',
         text: `New Form Submission Details:
   
